@@ -2,8 +2,37 @@ img{
     width: 100%;
     border: 0;
     
+    
 }
 
 body{
-    /*background-image: url(./image/yevhenii-dubrovskyi-nMKiXDttqEQ-unsplash.jpg);*/
+}
+
+.logo{
+    width: 6rem;
+    position: relative;
+
+    
+}
+
+.logoCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.left_Container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100%;
+    justify-content: space-between;
+    width: 50%;  
+    min-width: 60vh;
+    background-image: url(./image/yevhenii-dubrovskyi-nMKiXDttqEQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
