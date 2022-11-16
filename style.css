@@ -8,9 +8,9 @@ body{
     
     width: 100vw;
     height: 100vh;
-    border: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .logo{
@@ -18,6 +18,10 @@ body{
     position: relative;
 
     
+}
+
+.loginLink {
+    margin-left: 24px;
 }
 
 #subBut{
@@ -55,27 +59,31 @@ input{
 }
 
 .formBody{
-    width: clamp(40vw,50%,60vw);
+    width: clamp(300px,60%,100vw);
     display: flex;
+
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
      
 }
 .inputFields{
     display: flex;
     flex-wrap: wrap;
-    padding: clamp(1em,50%,2em);
-    background-color: lightgoldenrodyellow;  
+    padding: 1em;
+    
+    width: clamp(200px,100%,600px);  
+}
+.inputFormContainer{
+    background-color: lightgoldenrodyellow;
+    width: clamp(200px,100%,2000px); 
 }
 
 .logoCont{
     display: flex;
     justify-content: center;
+    padding: 0.5em;
     align-items: center;
-    margin: 6rem 0;
-    padding: 0.5rem;
-    width: clamp(400px,50%,80vw); 
-   
+    margin: 6rem 0;   
     background-color: rgba(20, 19, 19, 0.54);
 }
 
@@ -87,8 +95,29 @@ input{
     color: white;
     height: 100%;
     justify-content: space-between;
-     
+    width: clamp(500px,50%,80vw);
     background-image: url(./image/yevhenii-dubrovskyi-nMKiXDttqEQ-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.textForm p{
+    padding: 10px 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        flex-direction: column;
+        
+    }
+    .left_Container{
+        width: 100vw;
+    }
+
+    .formBody{
+        width: 90%;
+    }
+
 }
