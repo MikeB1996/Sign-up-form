@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="scripts.js"></script>
     <div class="left_Container">
 
         <div class="logoCont">
@@ -29,16 +30,17 @@
             <p>you know you want to</p>
         </div>
 
-        <form id="formObj">
+        <!--</p><form id="formObj" onsubmit="return checkEqual(this)">-->
+        <form id="formObk">
             <div class="inputFormContainer">
                 <div class="inputFields">
                     <div class="inputForm">
                         <label for="firstName">FIRST NAME: </label>
-                        <input type="text" name="firstName">
+                        <input type="text" name="firstName" required>
                     </div>
                     <div class="inputForm">
                         <label for="lastName">LAST NAME: </label>
-                        <input type="text" name="lastName">
+                        <input type="text" name="lastName" required>
                     </div>
                     <div class="inputForm">
                         <label for="emailBox">E-MAIL: </label>
@@ -46,15 +48,15 @@
                     </div>
                     <div class="inputForm">
                         <label for="phoneNumber">PHONE NUMBER: </label>
-                        <input type="tel" name="phoneNumber">
+                        <input type="tel" minlength="6" maxlength="10" name="phoneNumber">
                     </div>
                     <div class="inputForm">
                         <label for="passwordBox">PASSWORD: </label>
-                        <input type="password" name="passwordBox">
+                        <input id="password1" type="password" name="passwordBox" required>
                     </div>
                     <div class="inputForm">
                         <label for="passwordConfirm">CONFIRM PASSWORD: </label>
-                        <input type="password" name="passwordConfirm">
+                        <input id="password2" type="password" name="passwordConfirm" required>
                     </div>
                 </div>
             </div>
@@ -69,6 +71,6 @@
     </div>
     
 
-    <script src="scripts.js"></script>
+    
 </body>
 </html>
