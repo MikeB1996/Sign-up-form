@@ -20,13 +20,16 @@ body{
 
 #subBut{
     border-radius: 0.4em;
-    background-color: olive;
+    background-color: gray;
     color: white;
     font-weight: bold;
     padding: 10px 10px;
     width: 250px;
     font-size: 1em;
     margin: 1em;
+}
+#subBut:hover{
+    background-color: red;
 }
 
 
